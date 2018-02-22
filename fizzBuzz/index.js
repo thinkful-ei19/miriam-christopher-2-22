@@ -28,11 +28,12 @@ $(function() {
                 else {
                     //number
                     $('.js-results').append(`
-                    <span class="fizz-buzz-item">' + i + '</span>
+                    <span class="fizz-buzz-item">` + i + `</span>
                     `);
                 }
             }
             event.stopPropagation();
         })
     }
+    handleSubmit();
 })
