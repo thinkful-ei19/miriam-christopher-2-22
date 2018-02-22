@@ -1,10 +1,11 @@
 //3 = fizz, 5 = buzz, fizzbuzz if both. otherwise numbers. starting from 0.
 $(function() {
     function handleSubmit() {
-        $('form :submit').on('click', function() {
+        //$('form :submit').on('click', function() {
+        $('#number-chooser').submit(function() {
+            event.preventDefault();
             $('.js-results').html(' ');
             let number = $('#number-choice').val();
-            event.preventDefault();
             for (i=0; i<=number; i++) {
                 if (i % 15 === 0) {
                     //fizzbuzz
