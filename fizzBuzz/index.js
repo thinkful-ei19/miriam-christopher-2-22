@@ -7,19 +7,19 @@ $(function() {
             $('.js-results').html(' ');
             let number = $('#number-choice').val();
             for (i=0; i<=number; i++) {
-                if (i % 15 === 0) {
+                if (i % 15 === 0 && i != 0) {
                     //fizzbuzz
                     $('.js-results').append(`
                     <span class="fizz-buzz-item fizzbuzz">fizzbuzz</span>
                     `);
                 }
-                else if (i % 3 === 0) {
+                else if (i % 3 === 0 && i != 0) {
                     //fizz
                     $('.js-results').append(`
                     <span class="fizz-buzz-item fizz">fizz</span>
                     `);
                 }
-                else if (i % 5 === 0) {
+                else if (i % 5 === 0 && i != 0) {
                     //buzz
                     $('.js-results').append(`
                     <span class="fizz-buzz-item buzz">buzz</span>
