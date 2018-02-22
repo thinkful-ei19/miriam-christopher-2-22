@@ -4,7 +4,6 @@ $(function() {
         $('form :submit').on('click', function() {
             $('.js-results').html(' ');
             let number = $('#number-choice').val();
-            console.log(number);
             event.preventDefault();
             for (i=0; i<=number; i++) {
                 if (i % 15 === 0) {
@@ -32,7 +31,6 @@ $(function() {
                     `);
                 }
             }
-            event.stopPropagation();
         })
     }
     handleSubmit();
